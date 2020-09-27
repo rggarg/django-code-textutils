@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Hello Rohit Bhai Kya hal chal..........</h1>
+    <form action='/analyze' method="post">  {% csrf_token %}
+        <textarea name="text" style="margin: 0px; width: 1066px; height: 127px;"> </textarea><br>
+        <input type="checkbox" name="remove_punc">Remove punctuations<br>
+        <input type="checkbox" name="fullcaps">UPPERCASE<br>
+        <input type="checkbox" name="wordcount">Count the characters<br>
+        <input type="checkbox" name="new_line_remover">Remove the new line<br>
+        <input type="checkbox" name="space_remover">remove extra space<br>
+        <button type='submit'>Submit</button>
+    </form>
+</body>
+</html>
